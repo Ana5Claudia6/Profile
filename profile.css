@@ -1,0 +1,120 @@
+h1::before{
+		content: "Profile Page ";
+		color: green;
+    	font-weight: bold;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    min-height: 100%;
+
+    color: green;
+
+    font-family: 'Arial', serif;
+    font-size: 16px;
+    line-height: 28px;
+    background-color: green;
+
+
+}
+
+.container{
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	background-color: white;
+	padding: 10px; 
+}
+
+.navigation ul{
+	list-style-type: none;
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+
+
+}
+
+.navigation li {
+    margin-left: 30px;
+    padding: 0 5px;
+    color: green;
+
+}
+
+.navigation li:hover {
+    color: red;
+}
+
+.navigation li a {
+    color: green;
+    text-decoration: none;
+}
+
+.navigation li:hover a {
+    color: red;
+}
+
+.media_container{
+	width: 100%; 
+	height: 475px;
+
+}
+
+.cover_image{
+	width: 100%;
+	height: 400px;
+	/* best way to center crop images */
+	background-position: center center;
+	background-size: cover; /* a imagem mantem a estrutura
+	quer aumente ou diminue o zoom*/
+	
+}
+.profile_image{
+	/* why absolute?  coloca-se em relacao a posicao relatova
+	do seu pai*/
+	position: absolute; /* assim consigo colocar aonde e
+	eu quiser a imagem*/
+	left: 100px;
+    bottom: 150px;
+	width: 150px;
+	height: 150px;
+	margin-top: -75px;
+	margin-left: 75px; 
+
+	border-radius: 50%;
+    border: 2px solid green;
+    /* para centrar uma imagem colocamos essa imagem 
+    como background e depois aumentamos (background size)
+    e centralizamos com o background position*/
+    background-image: url(https://lh3.googleusercontent.com/zN1YfF5xqfYGvgWOW9iAE0QPIsxixHRgoL9a8u_NRZI=w938-h703-n);
+    background-size: 200%;
+    background-position: left bottom;
+
+
+    
+}
+
+.media_container .name{
+	
+	margin-top: -75px;
+	margin-left: 300px;
+	color: white;
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+
+    text-align: center;
+    background-color: green;
+    color: white;
+
+    line-height: 40px;
+    padding-bottom: 10px;
+
+
+}
